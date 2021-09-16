@@ -1,0 +1,45 @@
+
+body {
+    background: url("../image/sky.jpg") no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+  }
+
+.airballoon1 {
+    width: 120px;
+    height: 120px;
+    position: relative;
+    top: 50px;
+    left: 10px;
+    animation-name: ball1;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function:ease-out;
+    animation-direction: alternate;
+}
+@keyframes ball1 {
+    form{left: 0px;}
+    to{left: 900px;}
+    /* 0%{left: 200px;}
+    25%{left: 500px;}
+    50%{left: 900px;}
+    75%{left: 200px;}
+    100%{left: 20px;} */
+}
+
+.airballoon2{
+    width: 250px;
+    position: absolute;
+    top: 270px;
+    right: 0;
+    animation-name: ball2;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes ball2 {
+    form{right: 10px;}
+    to{right: 1100px;}
+}
